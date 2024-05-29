@@ -29,7 +29,7 @@ main{
     a{
         background-color: #999;
         border: 1px solid #999;
-        border-radius: 5%;
+        /* border-radius: 5%; */
         width: 450px;
         height: 50px;
         margin: 5px;
@@ -37,12 +37,14 @@ main{
         color: #ccc;
         text-decoration: none;
         display: inline-block;
+        padding: 0 auto;
     }
 }
 a:hover{
     background-color: #555;
     cursor: pointer;
     color: #000;
+    font-size: 2.5em;
 }
 a:active{
     background-color: #555;
