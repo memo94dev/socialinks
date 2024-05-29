@@ -60,6 +60,19 @@ img{
 img:hover{
     border: 2px solid #ccc;
 }
+.description{
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 3px;
+}
+.description:hover{
+    border: 1px solid #ccc;
+}
 p:hover{
     color: #555;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
