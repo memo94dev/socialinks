@@ -22,12 +22,16 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5px;
+    margin: 0 auto;
+}
+.contenedorimg{
+    margin: 0.5em;
 }
 .links{
     display: block;
+    margin: 0.5em;
     a{
-        background-color: #999;
+        background-color: transparent;
         border: 1px solid #999;
         border-radius: 15px;
         width: 450px;
@@ -77,3 +81,7 @@ p:hover{
     align-items: flex-end;
     margin-top: 1.5em;
 }
+@media (max-width: 400px) {
+    
+  }
+  
