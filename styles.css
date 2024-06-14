@@ -36,7 +36,7 @@ main{
     justify-content: center;
     margin: 0.5em;
     width: 80%;
-    a{
+    a#ref{
         background-color: #aaa;
         border: 1px solid #999;
         border-radius: 15px;
@@ -49,27 +49,29 @@ main{
         display: inline-block;
         padding: 0 auto;
         text-align: center;
-        max-inline-size: 450px;
+        max-inline-size: 600px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
     }
 }
-a:hover{
+a#ref:hover{
     background-color: #fc4b08;
     cursor: pointer;
     color: #000;
     font-size: 2.5em;
 }
-a:active{
+a#ref:active{
     background-color: #fc4b08;
     cursor: pointer;
     color: #000;
 }
-img{
+#profile{
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 2px solid #ccc;
 }
-img:hover{
+#profile:hover{
     border: 2px solid #555;
 }
 .description{
@@ -89,3 +91,18 @@ p:hover{
     align-items: flex-end;
     margin-top: 1.5em;
 } 
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    width: 45px;
+    height: 45px;
+    background-color: #999;
+    margin: 15px;
+}
+#logo:hover{
+    background-color: #fc4b08;
+}
