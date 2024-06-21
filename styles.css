@@ -89,7 +89,7 @@ p:hover{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: 1.5em;
+/*     margin-top: 1.5em; */
 } 
 .logos{
     display: flex;
