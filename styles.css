@@ -1,108 +1,240 @@
+@media(max-width: 720px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #000;
+        color: #ccc;
+        text-align: center;
+    }
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1:hover{
+        color: #555;
+    }
+    li{
+        list-style: none;
+    }
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .contenedorimg{
+        margin: 0.5em;
+    }
+    .links{
+        /* display: block; */
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5em;
+        width: 80%;
+        a#ref{
+            background-color: #aaa;
+            border: 1px solid #999;
+            border-radius: 15px;
+            width: 100%;
+            height: 50px;
+            margin: 5px;
+            font-size: 2em;
+            color: #000;
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 auto;
+            text-align: center;
+            max-inline-size: 600px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 800;
+        }
+    }
+    a#ref:hover{
+        background-color: #fc4b08;
+        cursor: pointer;
+        color: #000;
+        font-size: 2.5em;
+    }
+    a#ref:active{
+        background-color: #fc4b08;
+        cursor: pointer;
+        color: #000;
+    }
+    #profile{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #ccc;
+    }
+    #profile:hover{
+        border: 2px solid #555;
+    }
+    .description{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 3px;
+        width: max-content;
+        margin: 0 auto;
+    }
+    .description:hover{
+        border: 1px solid #555;
+    }
+    p:hover{
+        color: #555;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    } 
+    .logos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo{
+        width: 45px;
+        height: 45px;
+        background-color: #999;
+        margin: 15px;
+        border-radius: 10px;
+    }
+    #logo:hover{
+        background-color: #fc4b08;
+    }
+}
+@media(min-width: 721px) and (max-width: 3000px){
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --clr-negro: #111;
+    --clr-naranja: #fc4b08;
+    --clr-grisclaro: #ccc;
+    --clr-grisoscuro: #555;
+    --clr-blanco: #fff;
+}
 body{
-    background-color: #000;
-    color: #ccc;
-    text-align: center;
-}
-h1{
-    font-family: 'Times New Roman', Times, serif;
-}
-h1:hover{
-    color: #555;
-}
-li{
-    list-style: none;
-}
-main{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-}
-.contenedorimg{
-    margin: 0.5em;
-}
-.links{
-    /* display: block; */
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5em;
-    width: 80%;
-    a#ref{
-        background-color: #aaa;
-        border: 1px solid #999;
-        border-radius: 15px;
-        width: 100%;
-        height: 50px;
-        margin: 5px;
-        font-size: 2em;
-        color: #000;
-        text-decoration: none;
-        display: inline-block;
-        padding: 0 auto;
-        text-align: center;
-        max-inline-size: 600px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 800;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: var(--clr-negro);
+    color: var(--clr-grisclaro);
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2em;
+            text-align: center;
+        }
+        h1:hover{
+            color: var(--clr-grisoscuro);
+        }
+        #profile{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 2px solid var(--clr-grisclaro);
+        }
+        #profile:hover{
+            border: 2px solid var(--clr-grisoscuro);
+        }
+        .description{
+            border: 1px solid var(--clr-grisclaro);
+            border-radius: 5px;
+            padding: 3px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .description:hover{
+            border: 1px solid var(--clr-grisoscuro);
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 60%;
+        .links{
+            width: 80%;
+            text-align: center;
+            ul{
+                display: flex;
+                flex-direction: column;
+                /* height: 100%; */
+                li{
+                    list-style: none;
+                    margin: 3px;
+                    align-items: center;
+                    #ref{
+                        background-color: #aaa;
+                        border: 1px solid #999;
+                        border-radius: 15px;
+                        width: 100%;
+                        height: 50px;
+                        margin: 5px;
+                        font-size: 2em;
+                        color: var(--clr-negro);
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 0 auto;
+                        text-align: center;
+                        align-content: center;
+                        max-inline-size: 600px;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-weight: 800;
+                    }
+                    #ref:hover{
+                        background-color: var(--clr-naranja);
+                        cursor: pointer;
+                        color: var(--clr-negro);
+                        font-size: 2.5em;
+                    }
+                }
+            }
+        }
+        .logos{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            /* width: 100%; */
+            #logo{
+                width: 45px;
+                height: 45px;
+                background-color: #999;
+                /* margin: 15px; */
+                border-radius: 10px;
+            }
+            #logo:hover{
+                /* transform: scale(1.3); */
+                transform: rotateY(360deg);
+                transition: 1.5s;
+                background-color: var(--clr-naranja);
+            }
+        }
+    }
+    .footer:hover{
+            color: #555;
     }
 }
-a#ref:hover{
-    background-color: #fc4b08;
-    cursor: pointer;
-    color: #000;
-    font-size: 2.5em;
-}
-a#ref:active{
-    background-color: #fc4b08;
-    cursor: pointer;
-    color: #000;
-}
-#profile{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-}
-#profile:hover{
-    border: 2px solid #555;
-}
-.description{
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 3px;
-}
-.description:hover{
-    border: 1px solid #555;
-}
-p:hover{
-    color: #555;
-}
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-/*     margin-top: 1.5em; */
-} 
-.logos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-#logo{
-    width: 45px;
-    height: 45px;
-    background-color: #999;
-    margin: 15px;
-}
-#logo:hover{
-    background-color: #fc4b08;
 }
