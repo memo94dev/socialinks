@@ -11,6 +11,7 @@
     }
     h1{
         font-family: 'Times New Roman', Times, serif;
+        margin-top: 3px;
     }
     h1:hover{
         color: #555;
@@ -103,7 +104,8 @@
         width: 45px;
         height: 45px;
         background-color: #999;
-        margin: 15px;
+        margin-inline: 15px;
+        margin-block: 8px;
         border-radius: 10px;
     }
     #logo:hover{
