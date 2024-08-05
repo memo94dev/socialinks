@@ -29,6 +29,9 @@
     }
     .contenedorimg{
         margin: 0.5em;
+        img{
+            object-fit: cover;
+        }
     }
     .links{
         /* display: block; */
