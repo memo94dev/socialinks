@@ -155,6 +155,7 @@ body{
             height: 300px;
             border-radius: 50%;
             border: 2px solid var(--clr-grisclaro);
+            object-fit: cover;
         }
         #profile:hover{
             border: 2px solid var(--clr-grisoscuro);
